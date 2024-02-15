@@ -1,0 +1,118 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url(images/background.png);
+  color: white;
+}
+
+h1 {
+  font-size: 5vw;
+  animation: pulsate 0.11s ease-in-out infinite alternate;    
+}
+
+
+img {
+  border: 1px rgba(255, 255, 255, 0.733) solid;
+  border-radius: 5px;
+  box-shadow: -6px 6px 10px rgba(0, 0, 0, 1);
+}
+
+.title-container {
+  color: #fff;
+  padding: 20px;
+}
+
+.black-line {
+  border-top: 5px solid black;
+  box-shadow: -13px 10px 5px rgba(0, 0, 0, 0.384);
+  width: 90%;
+}
+
+.extras{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.extras1{font-size: 3vw;}
+
+.eggstras{
+  width: 90%;
+}
+
+
+.colorpre{
+  color: #fff;
+  font-size: large;
+}
+
+.myshadow{
+  text-shadow: -8px 10px 6px rgba(0, 0, 0, 1);
+}
+
+.rainbow-box {
+  border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+  box-shadow: -6px 6px 14px rgba(0, 0, 0, 1);
+}
+
+.monadancing{
+  max-width: 70%;
+  height: auto;
+}
+
+
+
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px rgb(0, 255, 34),
+      0 0 80px rgb(0, 255, 34),
+      0 0 90px rgb(0, 255, 34),
+      0 0 100px rgb(0, 255, 34),
+      0 0 150px rgb(0, 255, 34);
+  }
+ 0% {
+    /* A slightly smaller blur radius */
+    text-shadow:
+      0 0 4px #fff,
+      0 0 10px #fff,
+      0 0 18px #fff,
+      0 0 38px rgb(0, 255, 34),
+      0 0 73px rgb(0, 255, 34),
+      0 0 80px rgb(0, 255, 34),
+      0 0 94px rgb(0, 255, 34),
+      0 0 140px rgb(0, 255, 34);
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .title-container {
+      padding: 10px;
+  }
+   .catcoffe {
+    width: 100px;
+  }
+
+  .colorpre{
+    font-size: 8px;
+  }
+
+  p{
+    font-size: 10px;
+  }
+
+  .monadancing{
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
